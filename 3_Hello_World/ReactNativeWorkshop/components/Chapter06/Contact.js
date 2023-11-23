@@ -8,7 +8,7 @@ const Contact = ({route, navigation}) => {
             <Text>
                 To jest testowy komponent z kontaktem.
             </Text>
-            <Button title="Wróć do Home" onPress={() => navigation.navigate("Home")} />
+            <Button title="Idź do AboutUs" onPress={() => navigation.navigate("AboutUs")} />
         </View>
 
 
