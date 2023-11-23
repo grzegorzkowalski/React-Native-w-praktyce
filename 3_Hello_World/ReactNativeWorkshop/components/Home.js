@@ -1,5 +1,10 @@
 import React, {useState} from 'react';
-import {Text, ScrollView, StyleSheet} from 'react-native';
+import {
+    Text,
+    ScrollView,
+    StyleSheet,
+    Button
+} from 'react-native';
 import {useSafeAreaInsets } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import Name from "./Chapter05/Name";
@@ -13,7 +18,7 @@ import Invitation from "./Chapter05/Invitation";
 import DataTimer from "./Chapter05/DataTimer";
 import RandomNumberGenerator from "./Chapter05/RandomNumberGenerator";
 
-const Home = () => {
+const Home = ({route, navigation}) => {
     const [counter, setCounter] = useState(0);
     const inviteData = {
         day: "16.12.2023",
@@ -47,6 +52,7 @@ const Home = () => {
             <DataTimer />
             <Text>{counter}</Text>
             <RandomNumberGenerator updateApp={setCounter} />
+            <Button title="Kontakt" onPress={() => navigation.navigate("Kontakt")} />
             <StatusBar style="auto" />
         </ScrollView>
     );
