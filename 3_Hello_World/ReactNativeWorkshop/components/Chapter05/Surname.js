@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
 
 class Surname extends Component {
     render() {
