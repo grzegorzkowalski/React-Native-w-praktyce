@@ -7,7 +7,7 @@ const ShowDate = () => {
 
     useEffect(() => {
         setDate(new Date().toLocaleDateString())
-    }, []);
+    },[]);
 
     return (
         <Text>

@@ -7,7 +7,7 @@ const Layout = () => {
         <View style={styles.box}>
             <View style={styles.blueBox} />
             <View style={styles.redBox}>
-                <View style={[styles.yellowBox]} />
+                <View style={styles.yellowBox} />
                 <View style={styles.yellowBox} />
             </View>
         </View>
